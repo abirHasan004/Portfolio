@@ -1,7 +1,7 @@
 import React from 'react';
 import "./about.css";
-// import AboutImg from "../../assets/Profile.jpg";
-import CV from "../../assets/Example-Cv.pdf";
+import AboutImg from "../../assets/Profile.jpg";
+// import CV from "../../assets/Example-Cv.pdf";
 import Info from "./Info";
 
 const About = () => {
@@ -9,14 +9,14 @@ const About = () => {
     <section className="about section" id="about">
         <h2 className="section__title">About Me</h2>
         <span className="section__subtitle">A short introduction</span>
-        <div className="about__container container grid">
-            <img src='' alt="about" className="about__img" />
+        <div className="about__container container grid" style={{backgroundColor: "F5F5F5"}}>
+            <img src={AboutImg} alt="about" className="about__img" />
             <div className="about__data">
                 <Info />
                 <p className="about__description">
                 As a full-stack developer, I create applications with a strong emphasis on minimalism and user-friendly interfaces, blending design and functionality into seamless digital experiences
                 </p>
-                <a download="" href={CV} className="button button--flex">
+                <a download="" href={''} className="button button--flex">
                     Download CV
                     <svg
                         class="button__icon"
